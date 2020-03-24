@@ -26,9 +26,8 @@
     <link href="lib/fullpage-menu/fullpage-menu.css" rel="stylesheet">
     <link href="lib/cubeportfolio/cubeportfolio.css" rel="stylesheet">
     <link href="lib/superslides/superslides.css" rel="stylesheet">
-
     <link href="lib/jquery-jvectormap-2.0.5/jquery-jvectormap-2.0.5.css" rel="stylesheet">
-
+    <link href="lib/time-axis/lib/cntl.css">
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -47,18 +46,16 @@
     <script src="lib/jquery-jvectormap-2.0.5/jquery-jvectormap-2.0.5.min.js"></script>
     <script src="lib/jquery-jvectormap-2.0.5/jquery-jvectormap-world-merc.js"></script>
     <script src="lib/jquery-jvectormap-2.0.5/jquery-jvectormap-cn-merc.js"></script>
-    <script src="lib/jquery-jvectormap-2.0.5/jquery-jvectormap-th-merc.js"></script>
-    <script src="lib/jquery-jvectormap-2.0.5/jquery-jvectormap-nl-merc.js"></script>
-
+    <script src="lib/time-axis/lib/jquery.cntl.js"></script>
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
-    <script src="js/map.js"></script>
+
 </head>
 
 <body>
 <!--todo 字体 思源黑体-->
 <!-- Custom navbar -->
-<div class="custom-navbar"><a class="fm-button" href="#">Menu</a></div>
+<div class="custom-navbar"><a class="fm-button" href="#">Menu 地图</a></div>
 <div class="sidemenu">
     <ul class="fm-first-level">
         <li><a href="#menu1">Memory 记忆</a></li>
@@ -72,7 +69,7 @@
         </a>
     </nav>
     <nav id="menu2">
-        <a href="travel.html.html">
+        <a href="travel.html">
             <span class="subtitle">Every journey leaves a favourable impression.</span>
             足迹
         </a>
@@ -93,507 +90,98 @@
     </nav>
 </div>
 
-<!-- /END CUSTOM NAVBAR -->
-
-<div class="row mt2">
-    <div class="row mt presentation">
-        <img class="camera aligncenter" src="img/camera.png" alt="">
-        <h1 class="centered">我们的足迹</h1>
-        <h1 class="centered">OUR FOOTPRINTS</h1>
-        <h4 class="centered">我们走过的每个地方都值得记录</h4>
-    </div>
-    <section id="photostack-1" class="photostack photostack-start">
-        <div>
-            <figure>
-                <a href="#" class="photostack-img"><img src="img/travel/Amsterdam/5.jpg" alt="img01"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Dam Square</h2>
-                </figcaption>
-            </figure>
-            <figure>
-                <a href="#" class="photostack-img"><img src="img/travel/Delft/12.jpg" alt="img02"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Nieuwe kerk</h2>
-                </figcaption>
-            </figure>
-            <figure>
-                <a href="#" class="photostack-img"><img src="img/travel/Delft/13.jpg" alt="img03"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Delft Blue</h2>
-                </figcaption>
-            </figure>
-            <figure>
-                <a href="#" class="photostack-img"><img src="img/travel/Delft/6.jpg" alt="img04"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Jumbo</h2>
-                </figcaption>
-            </figure>
-            <figure>
-                <a href="#" class="photostack-img"><img src="img/travel/Delft/8.jpg" alt="img05"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Town Hall</h2>
-                </figcaption>
-            </figure>
-            <figure>
-                <a href="#" class="photostack-img"><img src="img/travel/Pattaya/2.jpg" alt="img06"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Pattaya</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/travel/Pattaya/3.jpg" alt="img07"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">拖拽伞</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/travel/Den Haag/2.jpg" alt="img08"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Calippo</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/travel/Den Haag/5.jpg" alt="img09"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Italian Pizza</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/himcan.jpg" alt="img10"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Him&Can</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/travel/Bangkok/2.jpg" alt="img11"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Pad Thai</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/travel/Suzhou/3.jpg" alt="img12"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">七里山塘</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/travel/Amsterdam/6.jpg" alt="img13"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Canals of Amsterdam</h2>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/travel/Hong kong/3.jpg" alt="img14"/></a>
-                <figcaption>
-                    <h2 class="photostack-title">Disney</h2>
-                </figcaption>
-            </figure>
-            <!--<figure data-dummy>-->
-                <!--<a href="#" class="photostack-img"><img src="img/15.jpg" alt="img15"/></a>-->
-                <!--<figcaption>-->
-                    <!--<h2 class="photostack-title">Shades of blue</h2>-->
-                <!--</figcaption>-->
-            <!--</figure>-->
-            <!--<figure data-dummy>-->
-                <!--<a href="#" class="photostack-img"><img src="img/16.jpg" alt="img16"/></a>-->
-                <!--<figcaption>-->
-                    <!--<h2 class="photostack-title">Lightness</h2>-->
-                <!--</figcaption>-->
-            <!--</figure>-->
+<!--<div class="jq22-container">-->
+<div class="row mt presentation">
+    <img class="camera aligncenter" src="img/camera.png" alt="">
+    <h1 class="centered">我们的时光廊</h1>
+    <h1 class="centered">OUR TIME AXIS</h1>
+    <hr>
+</div>
+<div class="cntl">
+		<span class="cntl-bar cntl-center">
+			<span class="cntl-bar-fill"></span>
+		</span>
+    <div class="cntl-states">
+        <div class="cntl-state">
+            <div class="cntl-content">
+                <h4>我们怎么认识的？</h4>
+                <h4>How do we met?</h4>
+                <p>
+                    在寒假的一个晚上，vava、any和yr在vv家楼下的运动场打羽毛球，打完就拖vv一起去吃夜宵，然后就开始熟悉起来，开始打打闹闹，互相吐槽，也渐渐觉得这个穿着豹纹鞋的飞机头小洋人有点可爱，这么说来any是我们的红娘呀！</p>
+            </div>
+            <div class="cntl-image"><img src="img/2011.jpg"></div>
+            <div class="cntl-icon cntl-center">2011.01</div>
         </div>
-    </section>
-    <!--<h4 class="centered">我们走过的每个地方都值得记录</h4>-->
-</div>
 
+        <div class="cntl-state">
+            <div class="cntl-content">
+                <h4>我们变得陌生了...</h4>
+                <h4>We become strangers...</h4>
+                <p>高三毕业之后，和vava渐渐断了联系，有时会回想起高三坐在vava隔壁，一起抢答生物的问题，讨论对方不会的题，欣赏着你异常完美的错题本，听着你吐槽我乱七八糟贴起来的错题本，偶尔会难过起来，还是会...想见你...
+                </p>
+            </div>
+            <div class="cntl-image"><img src="img/2012.jpg"></div>
+            <div class="cntl-icon cntl-center">2012.07</div>
+        </div>
+        <div class="cntl-state">
+            <div class="cntl-content">
+                <h4>我们恋爱了！</h4>
+                <h4>We are in love!</h4>
+                <p>大二的时候，vava开始画手小副业，经常征询我这个专业人士的意见，最后在我的指导下获得多次大奖。为了感谢我的指点，请我去贝岗大吃大喝，顺便开展了我们的贝岗赚钱小副业。慢慢地，vava被我的闪闪发光的人格魅力迷住，在情人湖边，进行了他的第一次告白。于是，我们的故事有了后来后来....
+                </p>
+            </div>
+            <div class="cntl-image"><img src="img/2013.jpg"></div>
+            <div class="cntl-icon cntl-center">2013.11</div>
+        </div>
 
-<div class="world-sum">
-    <!--<div id="world-map" class="world-map"></div>-->
-    <div id="grid-container-world" class="mapcbp cbp-l-grid-fullScreen">
-        <ul>
-            <li id="world-map" class="mapcbpimg cbp-item identity">
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/works/cn2.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/works/cn2.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">中国 China</div>
-                                <div class="cbp-l-caption-desc"> ▪ Guangzhou ▪ Shanghai ▪ Shenzhen </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <!-- end:Item -->
-            <li class="mapcbpimg cbp-item web-design">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/works/th2.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/works/th2.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">泰国 Thailand</div>
-                                <div class="cbp-l-caption-desc"> ▪ Bangkok ▪ Chiangmai ▪ Pattaya</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item graphic identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/works/nl2.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/works/nl2.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">荷兰 Netherlands</div>
-                                <div class="cbp-l-caption-desc"> ▪ Amsterdam ▪ Den Haag ▪ Delft</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
+        <div class="cntl-state">
+            <div class="cntl-content">
+                <h4>我们开始了异地恋</h4>
+                <h4>We started a long-distance relationship.</h4>
+                <p>在一起的两年多大学时光里，我们组成了无敌小队，互相鼓励，互相支援，一起努力解决了很多小怪兽，掉落了国奖金钱加成，双学位荣誉加成、研究生副本免试通行票。拿着通行票的我们开启了异地恋副本，新副本确实有点难度，一开始我们掉了不少血，但是我们坚持了下去，在经历了雅思考试和找工作难关后，默契、信心、感情技能加成点满，我们逐渐看清楚了我们的未来。
+                </p>
+            </div>
+
+            <div class="cntl-image"><img src="img/2016.jpg"></div>
+            <div class="cntl-icon cntl-center">2016.09</div>
+        </div>
+
+        <div class="cntl-state">
+            <div class="cntl-content">
+                <h4>我们开始了异国恋</h4>
+                <h4>We started a excotic relationship.</h4>
+                <p>当一个副本打通关后，势必是要进入下一关的。没错，是强者就要挑战异国恋副本！异国之后，七个小时的时差让我们能聊天的机会少了很多。2020年的春节，vv坐上了飞机，第一次去到Delft找vava。记得有一天傍晚，我们在jumbo买完东西之后走出超市，5点多时候的天都黑了，牵着手慢慢地走回家，经过一栋栋欧式小房子街道，有一搭没一搭地聊以后要买哪一栋，嘴里叼着小火箭冰棍，听着vava在叨念这“哎哟，我们这神仙爱情啊！”，有一瞬间觉得，没错！这就是神仙爱情！！！
+                </p>
+            </div>
+
+            <div class="cntl-image"><img src="img/2019.jpg"></div>
+            <div class="cntl-icon cntl-center">2019.11</div>
+        </div>
+
+        <div class="cntl-state">
+            <div class="cntl-content">
+                <h4>我们的故事未完待续...</h4>
+                <h4>To be continued...</h4>
+                <p>请你去陪伴我下半个未来<br>我们天天更新最美好片段<br>不管什么句点 试图打断连载<br>我们要一辈子 有后来后来</p>
+                <p style="text-indent:12em">——S.H.E《后来后来》</p>
+            </div>
+            <div class="cntl-image"><img src="img/2020.jpg"></div>
+            <div class="cntl-icon cntl-center">∞</div>
+        </div>
     </div>
+    <!--</div>-->
+
 </div>
-
-
-
-<div class="row">
-    <div class="row mt">
-        <!--<img class="camera aligncenter" src="img/camera.png" alt="">-->
-        <h1 class="centered">中国</h1>
-        <h1 class="centered">China</h1>
-        <!--<h5 class="centered">我们走过的每个地方都值得记录</h5>-->
-    </div>
-</div>
-
-
-<div class="china-sum">
-    <div id="grid-container-china" class="mapcbp cbp-l-grid-fullScreen">
-        <ul>
-            <li id="china-map" class="mapcbpimg cbp-item identity">
-            </li>
-            <li class="mapcbpimg cbp-item graphic identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Shantou/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Shantou/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">汕头 Shantou</div>
-                                <div class="cbp-l-caption-desc">三中烧烤 小公园</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item web-design">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Guangzhou/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Guangzhou/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">广州 Guangzhou</div>
-                                <div class="cbp-l-caption-desc">贝岗 长隆 保龄球 西门口</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Shanghai/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Shanghai/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">上海 Shanghai</div>
-                                <div class="cbp-l-caption-desc">桂满陇 五角场 同济大学</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Shenzhen/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Shenzhen/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">深圳 Shenzhen</div>
-                                <div class="cbp-l-caption-desc">周杰伦演唱会 大渔铁板烧</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Nanjing/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Nanjing/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">南京 Nanjing</div>
-                                <div class="cbp-l-caption-desc">42度极限天气 夫子庙</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Suzhou/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Suzhou/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">苏州 Suzhou</div>
-                                <div class="cbp-l-caption-desc">哑巴生煎 肉骨烧</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Wuhan/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Wuhan/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">武汉 Wuhan</div>
-                                <div class="cbp-l-caption-desc">烤猪脚 户部巷</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Zhuhai/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Zhuhai/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">珠海 Zhuhai</div>
-                                <div class="cbp-l-caption-desc">中秋节</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Hong Kong/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Hong Kong/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">香港 Hong Kong</div>
-                                <div class="cbp-l-caption-desc">迪士尼 旺角</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Macao/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Macao/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">澳门 Macao</div>
-                                <div class="cbp-l-caption-desc">大三巴 猪扒包</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Zhongshan/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Zhongshan/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">中山 Zhongshan</div>
-                                <div class="cbp-l-caption-desc">乳鸽</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Huizhou/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Huizhou/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">惠州 Huizhou</div>
-                                <div class="cbp-l-caption-desc">烧烤</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-
-<div >
-    <div >
-        <!--<img class="camera aligncenter" src="img/camera.png" alt="">-->
-        <h1 class="centered">泰国</h1>
-        <h1 class="centered">Thailand</h1>
-        <!--<h5 class="centered">我们走过的每个地方都值得记录</h5>-->
-    </div>
-</div>
-
-
-<div class="thailand-sum">
-    <div id="grid-container-thailand" class="mapcbp cbp-l-grid-fullScreen">
-        <ul>
-            <li id="thailand-map" class="mapcbpimg cbp-item identity">
-            </li>
-            <li class="mapcbpimg cbp-item graphic identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Bangkok/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Bangkok/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">曼谷 Bangkok</div>
-                                <div class="cbp-l-caption-desc">咖喱蟹</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item web-design">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Chiangmai/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Chiangmai/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">清迈 Chiangmai</div>
-                                <div class="cbp-l-caption-desc">周日夜市 女子监狱马杀鸡</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Pattaya/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Pattaya/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">芭提雅 Pattaya</div>
-                                <div class="cbp-l-caption-desc">拖拽伞 红灯街</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-
-
-<div class="row">
-    <div class="row mt">
-        <!--<img class="camera aligncenter" src="img/camera.png" alt="">-->
-        <h1 class="centered">荷兰</h1>
-        <h1 class="centered">Netherlands</h1>
-        <!--<h5 class="centered">我们走过的每个地方都值得记录</h5>-->
-    </div>
-</div>
-
-
-<div class="netherlands-sum">
-    <div id="grid-container-netherlands" class="mapcbp cbp-l-grid-fullScreen">
-        <ul>
-            <li id="netherlands-map" class="mapcbpimg cbp-item identity">
-            </li>
-            <li class="mapcbpimg cbp-item graphic identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Amsterdam/3.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Amsterdam/3.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">阿姆斯特丹 Amsterdam</div>
-                                <div class="cbp-l-caption-desc">▪ Canals of Amsterdam ▪ Dam Square ▪ Amsterdam Centraal ▪ Koekmakerij Cookie</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item web-design">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Delft/9.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Delft/9.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">代尔夫特 Delft</div>
-                                <div class="cbp-l-caption-desc">▪ TU Delft ▪ Nieuwe kerk ▪ Jumbo ▪ Albert Heijn</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="mapcbpimg cbp-item identity">
-                <a class="cbp-caption cbp-lightbox" data-title="Image" href="img/travel/Den Haag/1.jpg">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="img/travel/Den Haag/1.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignCenter">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">海牙 Den Haag</div>
-                                <div class="cbp-l-caption-desc">pizza </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        $('.cntl').cntl({
+            revealbefore: 300,
+            anim_class: 'cntl-animate',
+            onreveal: function (e) {
+                console.log(e);
+            }
+        });
+    });
+</script>
 </body>
 </html>
